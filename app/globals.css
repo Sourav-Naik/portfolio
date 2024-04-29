@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(183, 131, 231, 0.818),
+    rgb(209, 209, 209),
+    rgba(183, 131, 231, 0.818)
+  );
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit vendor prefix */
+  -webkit-text-fill-color: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+li::marker {
+  color: white  ;
+}
