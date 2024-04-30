@@ -1,6 +1,7 @@
 import Image from "next/image";
 import shopon_preview from "../Images/shopon_preview.jpg";
 import logo from "@/app/Images/logo.jpg";
+import currency_converter_preview from "@/app/Images/currency_converter_preview.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBasketShopping,
@@ -25,13 +26,13 @@ export default function Project() {
           </div>
           <div className="flex justify-evenly w-full mt-8 flex-wrap lg:flex-nowrap">
             {/* First project */}
-            <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative">
+            <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
               <div className="relative border-b-2 border-[#C778DD]">
                 <Image src={shopon_preview} alt="" width={350} />
                 <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
                   <div className="flex flex-col items-start text-white font-extrabold text-3xl">
                     <span>ShopON</span>
-                    <span className="text-sm text-black">
+                    <span className="text-sm text-black text-start">
                       Shopping is always ON....
                     </span>
                   </div>
@@ -63,32 +64,87 @@ export default function Project() {
               <div className="flex justify-start border-b-2 border-[#C778DD] p-2 text-lg text-[#ABB2BF] font-semibold">
                 React Bootstrap Vercel
               </div>
-              <div className="flex flex-col p-2 text-start">
+              <div className="flex flex-col p-2 text-start h-full justify-between">
                 <div className="text-2xl font-semibold">ShopON</div>
-                <div className="text-[#ABB2BF] font-semibold">
-                  A React based e-commerce front-end application.
-                </div>
-                <div className="text-[#ABB2BF] mt-2 mb-[2px]">
-                  <a
-                    href="https://shop-on-five.vercel.app/"
-                    target="main"
-                    className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mb-1"
-                  >
-                    Live{" -> "}
-                  </a>
-                  <a
-                    href="https://github.com/Sourav-Naik/ShopOn"
-                    target="main"
-                    className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mt-1"
-                  >
-                    Source {`</>`}
-                  </a>
+                <div>
+                  <div className="text-[#ABB2BF] font-semibold">
+                    A React based e-commerce front-end application.
+                  </div>
+                  <div className="text-[#ABB2BF] mt-2 mb-[2px]">
+                    <a
+                      href="https://shop-on-five.vercel.app/"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mb-1"
+                    >
+                      Live{" -> "}
+                    </a>
+                    <a
+                      href="https://github.com/Sourav-Naik/ShopOn"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mt-1"
+                    >
+                      Source {`</>`}
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="absolute w-full h-full flex justify-center items-end -z-10">
                 <Image
                   src={logo}
-                  width={300}
+                  width={200}
+                  alt="sourav"
+                  className="opacity-25"
+                />
+              </div>
+            </div>
+
+            {/* Second project */}
+            <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
+              <div className="relative border-b-2 border-[#C778DD]">
+                <Image src={currency_converter_preview} alt="" width={350} />
+                <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
+                  <div className="flex flex-col items-start text-white font-extrabold text-3xl">
+                    <span>CoinSwap</span>
+                    <span className="text-sm text-black text-start">
+                      One-Click Currency Conversions
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-start border-b-2 border-[#C778DD] p-2 text-lg text-[#ABB2BF] font-semibold">
+                HTML Bootstrap JS
+              </div>
+              <div className="flex flex-col p-2 text-start h-full justify-between">
+                <div className="text-2xl font-semibold">CoinSwap</div>
+
+                <div>
+                  {" "}
+                  <div className="text-[#ABB2BF] font-semibold">
+                    A single HTML page application with responsive U.I. to get
+                    your currency converted
+                  </div>
+                  <div className="text-[#ABB2BF] mt-2 mb-[2px]">
+                    <a
+                      href="https://sourav-naik.github.io/Currency-Converter/"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mb-1"
+                    >
+                      Live{" -> "}
+                    </a>
+                    <a
+                      href="https://github.com/Sourav-Naik/Currency-Converter"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mt-1"
+                    >
+                      Source {`</>`}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+                <Image
+                  src={logo}
+                  width={200}
                   alt="sourav"
                   className="opacity-25"
                 />
@@ -103,7 +159,7 @@ export default function Project() {
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             small-apps{` `}
           </div>
-          <div className="flex justify-start w-full mt-8 flex-wrap sm:ms-10">
+          <div className="flex justify-center 2xl:justify-start w-fit mt-8 flex-wrap sm:ms-10 relative">
             {/* First small app */}
             <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-2 relative">
               <div className="text-xl font-semibold p-2 border-b-2 border-[#C778DD]">
@@ -134,10 +190,10 @@ export default function Project() {
                   </a>
                 </div>
               </div>
-              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+              <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
                 <Image
                   src={logo}
-                  width={300}
+                  width={200}
                   alt="sourav"
                   className="opacity-25"
                 />
@@ -173,10 +229,10 @@ export default function Project() {
                   </a>
                 </div>
               </div>
-              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+              <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
                 <Image
                   src={logo}
-                  width={300}
+                  width={200}
                   alt="sourav"
                   className="opacity-25"
                 />
@@ -213,10 +269,10 @@ export default function Project() {
                   </a>
                 </div>
               </div>
-              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+              <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
                 <Image
                   src={logo}
-                  width={300}
+                  width={200}
                   alt="sourav"
                   className="opacity-25"
                 />
@@ -248,14 +304,23 @@ export default function Project() {
                   </a>
                 </div>
               </div>
-              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+              <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
                 <Image
                   src={logo}
-                  width={300}
+                  width={200}
                   alt="sourav"
                   className="opacity-25"
                 />
               </div>
+            </div>
+
+            <div className="absolute w-full h-full justify-center items-center -z-10 hidden md:flex">
+              <Image
+                src={logo}
+                width={300}
+                alt="sourav"
+                className="opacity-25"
+              />
             </div>
           </div>
         </div>
