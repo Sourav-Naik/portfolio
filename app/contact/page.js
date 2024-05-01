@@ -14,8 +14,10 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -24,12 +26,13 @@ export default function Contact() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data.email);
+    setLoading(true);
     emailjs
       .send("portfolio", "template_5wdw6xm", data, "oCE45E_7vxwLotKib")
       .then(
         (response) => {
           reset();
+          setLoading(false);
           alert("Email sent successfully!");
         },
         (err) => {
@@ -38,9 +41,13 @@ export default function Contact() {
         }
       );
   };
+
   return (
     <>
-      <div className="mt-8 sm:mt-16 px-6 lg:px-24 mx-auto mb-2 container min-h-full items-start text-justify tracking-widest text-white">
+      <div
+        className="mt-8 sm:mt-16 px-6 lg:px-24 mx-auto mb-2 container min-h-full items-start text-justify tracking-widest text-white"
+        style={{ cursor: `${loading === true && "progress"}` }}
+      >
         <div className="text-3xl text-start">
           <span className="text-[#C778DD] pe-[2px] font-semibold">/</span>
           contact-me{` `}
@@ -188,6 +195,7 @@ export default function Contact() {
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col w-fit mx-auto"
+                style={{ cursor: `${loading === true && "progress"}` }}
               >
                 <div className="flex flex-wrap justify-start">
                   <div className="w-full text-[#ABB2BF] max-h-fit mb-4">
