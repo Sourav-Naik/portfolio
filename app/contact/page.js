@@ -32,12 +32,13 @@ export default function Contact() {
       .then(
         (response) => {
           reset();
-          setLoading(false);
           alert("Email sent successfully!");
+          setLoading(false);
         },
         (err) => {
           reset();
           alert("Sorry! Service Down");
+          setLoading(false);
         }
       );
   };
@@ -46,7 +47,7 @@ export default function Contact() {
     <>
       <div
         className="mt-8 sm:mt-16 px-6 lg:px-24 mx-auto mb-2 container min-h-full items-start text-justify tracking-widest text-white"
-        style={{ cursor: `${loading === true && "progress"}` }}
+        style={{ cursor: `${loading === true ? "progress" : "default"}` }}
       >
         <div className="text-3xl text-start">
           <span className="text-[#C778DD] pe-[2px] font-semibold">/</span>
@@ -195,7 +196,9 @@ export default function Contact() {
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col w-fit mx-auto"
-                style={{ cursor: `${loading === true && "progress"}` }}
+                style={{
+                  cursor: `${loading === true ? "progress" : "default"}`,
+                }}
               >
                 <div className="flex flex-wrap justify-start">
                   <div className="w-full text-[#ABB2BF] max-h-fit mb-4">
