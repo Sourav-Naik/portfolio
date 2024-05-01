@@ -19,7 +19,8 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    formState: { errors},
+    reset,
+    formState: { errors },
   } = useForm();
 
   const onSubmit = async (data) => {
@@ -28,7 +29,9 @@ export default function Contact() {
       .send("portfolio", "template_5wdw6xm", data, "oCE45E_7vxwLotKib")
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          reset();
+          // Optionally, you can provide the user with success feedback (e.g., alert or notification)
+          alert("Email sent successfully!");
         },
         (err) => {
           console.log("FAILED...", err);
