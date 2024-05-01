@@ -30,11 +30,11 @@ export default function Contact() {
       .then(
         (response) => {
           reset();
-          // Optionally, you can provide the user with success feedback (e.g., alert or notification)
           alert("Email sent successfully!");
         },
         (err) => {
-          console.log("FAILED...", err);
+          reset();
+          alert("Sorry! Service Down");
         }
       );
   };
