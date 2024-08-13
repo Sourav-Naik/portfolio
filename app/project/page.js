@@ -43,7 +43,7 @@ export default function Project() {
                   <div className="flex flex-col items-start text-white font-extrabold text-3xl text-nowrap">
                     <span>Spotify</span>
                     <span className="text-sm text-white text-start font-medium">
-                      Never Stop Listing
+                      Never Stop Listening
                     </span>
                   </div>
                   <div className="flex flex-col items-start space-y-2">
@@ -84,7 +84,7 @@ export default function Project() {
                   </div>
                   <div className="text-[#ABB2BF] mt-2 mb-[2px]">
                     <a
-                      href="https://spotify-aqyycsgju-souravs-projects-78f234d9.vercel.app"
+                      href="https://spotify-ivory-eight.vercel.app/"
                       target="main"
                       className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mb-1"
                     >
