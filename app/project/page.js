@@ -1,13 +1,17 @@
 import Image from "next/image";
 import logo from "@/app/Images/logo.jpg";
 import shopon_preview from "../Images/shopon_preview.jpg";
+import spotify_preview from "@/app/Images/spotify-web-player.jpg";
 import enotebook_preview from "@/app/Images/enotebook_preview.jpg";
 import currency_converter_preview from "@/app/Images/currency_converter_preview.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBasketShopping,
   faCartPlus,
+  faCirclePlay,
   faHandPointer,
+  faHeart,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Project() {
   return (
@@ -25,15 +29,100 @@ export default function Project() {
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             complete-apps{` `}
           </div>
-          <div className="flex justify-evenly w-full mt-8 flex-wrap lg:flex-nowrap">
-            {/* First project */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8 w-fit mx-auto">
+            {/*first project */}
             <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
               <div className="relative border-b-2 border-[#C778DD]">
-                <Image src={shopon_preview} alt="" width={350} />
+                <Image
+                  src={spotify_preview}
+                  alt=""
+                  width={350}
+                  className="object-cover max-h-[200px]"
+                />
+                <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
+                  <div className="flex flex-col items-start text-white font-extrabold text-3xl text-nowrap">
+                    <span>Spotify</span>
+                    <span className="text-sm text-white text-start font-medium">
+                      Never Stop Listing
+                    </span>
+                  </div>
+                  <div className="flex flex-col items-start space-y-2">
+                    <div className="flex items-center border rounded-2xl p-1 px-3 border-white text-white">
+                      <FontAwesomeIcon
+                        icon={faMagnifyingGlass}
+                        className="h-6  me-2 w-8"
+                      />{" "}
+                      Search
+                    </div>
+                    <div className="flex items-center border rounded-2xl p-1 px-3 border-white text-white">
+                      <FontAwesomeIcon
+                        icon={faHeart}
+                        className="h-6  me-2 w-8"
+                      />{" "}
+                      Like
+                    </div>
+                    <div className="flex items-center border rounded-2xl p-1 px-3 border-white text-white">
+                      <FontAwesomeIcon
+                        icon={faCirclePlay}
+                        className="h-6  me-2 w-8"
+                      />{" "}
+                      Play
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-start border-b-2 border-[#C778DD] p-2 text-lg text-[#ABB2BF] font-semibold">
+                Next.js Tailwind Next-Auth
+              </div>
+              <div className="flex flex-col p-2 text-start h-full justify-between">
+                <div className="text-2xl font-semibold">Spotify Clone</div>
+
+                <div>
+                  <div className="text-[#ABB2BF] font-semibold">
+                    A Next.JS app for enchaned and easy to maintain SEO's
+                    operation.
+                  </div>
+                  <div className="text-[#ABB2BF] mt-2 mb-[2px]">
+                    <a
+                      href="https://spotify-aqyycsgju-souravs-projects-78f234d9.vercel.app"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mb-1"
+                    >
+                      Live{" -> "}
+                    </a>
+                    <a
+                      href="https://github.com/Sourav-Naik/Spotify_clone"
+                      target="main"
+                      className="border p-2 px-3 tracking-wide font-medium font-mono border-[#ABB2BF] hover:text-white hover:bg-[#ABB2BF] me-2 inline-block leading-3 text-base mt-1"
+                    >
+                      Source {`</>`}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute w-full h-full flex justify-center items-end -z-10">
+                <Image
+                  src={logo}
+                  width={200}
+                  alt="sourav"
+                  className="opacity-25"
+                />
+              </div>
+            </div>
+
+            {/* Second project */}
+            <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
+              <div className="relative border-b-2 border-[#C778DD]">
+                <Image
+                  src={shopon_preview}
+                  alt=""
+                  width={350}
+                  className="object-cover max-h-[200px]"
+                />
                 <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
                   <div className="flex flex-col items-start text-white font-extrabold text-3xl">
                     <span>ShopON</span>
-                    <span className="text-sm text-black text-start">
+                    <span className="text-sm text-white text-start font-medium">
                       Shopping is always ON....
                     </span>
                   </div>
@@ -99,21 +188,26 @@ export default function Project() {
               </div>
             </div>
 
-            {/* Second project */}
+            {/* third project */}
             <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
               <div className="relative border-b-2 border-[#C778DD]">
-                <Image src={enotebook_preview} alt="" width={350} />
+                <Image
+                  src={enotebook_preview}
+                  alt=""
+                  width={350}
+                  className="object-cover max-h-[200px]"
+                />
                 <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
                   <div className="flex flex-col items-start text-white font-extrabold text-3xl">
                     <span>ⓔNoteBook</span>
-                    <span className="text-sm text-black text-start">
+                    <span className="text-sm text-white text-start font-medium">
                       Your Digital Notepad, Everywhere You Go!
                     </span>
                   </div>
                 </div>
               </div>
               <div className="flex justify-start border-b-2 border-[#C778DD] p-2 text-lg text-[#ABB2BF] font-semibold">
-                React Express MongoDB Bootstrap
+                React Express MongoDB
               </div>
               <div className="flex flex-col p-2 text-start h-full justify-between">
                 <div className="text-2xl font-semibold">ⓔNoteBook</div>
@@ -151,14 +245,19 @@ export default function Project() {
               </div>
             </div>
 
-            {/* third project */}
+            {/* fourth project */}
             <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-1 relative overflow-x-hidden">
               <div className="relative border-b-2 border-[#C778DD]">
-                <Image src={currency_converter_preview} alt="" width={350} />
+                <Image
+                  src={currency_converter_preview}
+                  alt=""
+                  width={350}
+                  className="object-cover max-h-[200px]"
+                />
                 <div className="absolute top-0 min-h-full min-w-full flex items-center font-bold text-white backdrop-blur-sm bg-opacity-50 bg-[#C778DD] p-3 justify-between">
                   <div className="flex flex-col items-start text-white font-extrabold text-3xl">
                     <span>CoinSwap</span>
-                    <span className="text-sm text-black text-start">
+                    <span className="text-sm text-white text-start font-medium">
                       One-Click Currency Conversions
                     </span>
                   </div>
@@ -212,7 +311,7 @@ export default function Project() {
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             small-apps{` `}
           </div>
-          <div className="flex justify-center 2xl:justify-start w-fit mt-8 flex-wrap sm:ms-10 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8 w-fit mx-auto">
             {/* First small app */}
             <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] max-w-[350px] m-2 relative">
               <div className="text-xl font-semibold p-2 border-b-2 border-[#C778DD]">
