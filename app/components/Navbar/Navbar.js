@@ -1,10 +1,10 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import Image from "next/image";
-import logo from "@/app/Images/logo.jpg";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import logo from "@/app/Images/logo.jpg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
