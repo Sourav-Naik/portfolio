@@ -3,61 +3,53 @@ import logo from "@/app/Images/logo.jpg";
 import side from "@/app/Images/side.jpg";
 export default function About() {
   return (
-    <div className="mt-8 sm:mt-16 px-6 lg:px-24 mx-auto mb-2 container min-h-full items-start text-justify tracking-widest text-white">
-      <div className="text-3xl text-start">
+    <div className="main">
+      <div className="text-3xl text-start mb-4 md:mb-8">
         <span className="text-[#C778DD] pe-[2px] font-semibold">/</span>
-        about-me{` `}
-        <div className=" mt-3 text-base text-[#ABB2BF] font-semibold">
-          Who am I?
-        </div>
+        about-me
+        <div className="text-base text-[#ABB2BF] font-semibold">Who am I?</div>
       </div>
 
-      <div className="sm:px-4">
+      <div className="sm:px-4 text-start">
         {/* intro */}
-        <div className="flex flex-col-reverse md:flex-row justify-between items-center relative md:mt-7 xl:mt-0 xl:bottom-7 2xl:bottom-10">
-          <div className="md:w-1/2 pt-10 md:pt-4 lg:pt-0 text-[#ABB2BF] font-semibold text-lg text-justify tracking-wide h-fit flex relative flex-col">
-            <div>
-              A multidisciplinary engineer with a passion for innovation and
-              technology. Hailing from the serene hills of Dharamshala, India,
-              I've journeyed from the tranquil landscapes of Himachal Pradesh to
-              the bustling halls of Chandigarh University. With a solid
-              foundation in mechatronics engineering, I've honed my skills in
-              mechanical design, electronics, and programming, delving into the
-              realms of robotics and automation.
-              <br />
-              <br />
-              In addition to my mechatronics expertise, I'm also a self-taught
-              front-end developer, specializing in crafting captivating user
-              experiences and developing responsive websites from scratch. My
-              journey in web development has been a testament to my dedication
-              to blending creativity with technology, transforming concepts into
-              modern, user-friendly web applications.
-            </div>
-            <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={300}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
+        <div className="flex flex-col-reverse md:flex-row items-center md:items-stretch relative px-2 gap-4">
+          <div className="flex-1 text-[#ABB2BF] font-semibold text-lg text-justify tracking-wide relative">
+            A multidisciplinary engineer with a passion for innovation and
+            technology. Hailing from the serene hills of Dharamshala, India,
+            I've journeyed from the tranquil landscapes of Himachal Pradesh to
+            the bustling halls of Chandigarh University. With a solid foundation
+            in mechatronics engineering, I've honed my skills in mechanical
+            design, electronics, and programming, delving into the realms of
+            robotics and automation.
+            <br />
+            <br />
+            In addition to my mechatronics expertise, I'm also a self-taught
+            front-end developer, specializing in crafting captivating user
+            experiences and developing responsive websites from scratch. My
+            journey in web development has been a testament to my dedication to
+            blending creativity with technology, transforming concepts into
+            modern, user-friendly web applications.
           </div>
-          <Image
-            src={side}
-            alt="..."
-            className="border-b-2 border-[#C778DD] lg:min-w-[350px] pt-10 md:pt-0 "
-          />
-          <div className="absolute top-0 w-full h-full justify-center items-center -z-10 hidden md:flex">
+
+          <div className="flex-1 flex md:justify-end items-stretch">
+            <Image
+              src={side}
+              alt="..."
+              className="object-fill"
+            />
+          </div>
+          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10">
             <Image src={logo} width={300} alt="sourav" className="opacity-25" />
           </div>
         </div>
+
         {/* skills */}
-        <div className="w-full mt-8 relative">
+        <div className="w-full mt-8 tracking-wide">
           <div className="text-2xl mb-2">
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             Skills:
           </div>
-          <div className="text-[#ABB2BF] font-semibold">
+          <div className="text-[#ABB2BF] font-semibold px-4 text-justify">
             <ul className="ms-4 space-y-2" style={{ listStyleType: "square" }}>
               <li>
                 Proficient in computer programming with expertise in languages
@@ -88,17 +80,15 @@ export default function About() {
               <li>Strong analytical and problem-solving skills.</li>
             </ul>
           </div>
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
+
         {/* Experience */}
-        <div className="w-full mt-8 relative">
+        <div className="w-full mt-8 tracking-wide">
           <div className="text-2xl mb-2">
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             Experience:
           </div>
-          <div className="text-[#ABB2BF] font-semibold">
+          <div className="text-[#ABB2BF] font-semibold px-4 text-justify">
             <ul className="ms-4 space-y-2" style={{ listStyleType: "square" }}>
               <li>
                 With a solid educational background in mechatronics engineering
@@ -120,17 +110,15 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
+
         {/* Education */}
-        <div className="w-full mt-8 relative">
+        <div className="w-full mt-8 tracking-wide">
           <div className="text-2xl mb-2">
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             Education:
           </div>
-          <div className="text-[#ABB2BF] font-semibold">
+          <div className="text-[#ABB2BF] font-semibold px-4 text-justify">
             <ul className="ms-4 space-y-2" style={{ listStyleType: "square" }}>
               <li>
                 Bachelor of Engineering in Mechatronics from Chandigarh
@@ -142,18 +130,15 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
+
         {/* Achievements */}
-        <div className="w-full mt-8 relative">
+        <div className="w-full mt-8 tracking-wide">
           <div className="text-2xl mb-2">
-            {" "}
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             Achievements:
           </div>
-          <div className="text-[#ABB2BF] font-semibold">
+          <div className="text-[#ABB2BF] font-semibold px-4 text-justify">
             <ul className="ms-4 space-y-2" style={{ listStyleType: "square" }}>
               <li>
                 Consistently maintained high academic performance throughout my
@@ -174,26 +159,21 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
+
         {/* Interests */}
-        <div className="w-full mt-8 relative">
+        <div className="w-full mt-8 tracking-wide">
           <div className="text-2xl mb-2">
             <span className="text-[#C778DD] pe-[2px] font-semibold">#</span>
             Interests:
           </div>
-          <div className="text-[#ABB2BF] font-semibold">
+          <div className="text-[#ABB2BF] font-semibold px-4 text-justify">
             While I don't have a specific hobby, I enjoy exploring different
             interests over time. From playing cricket during my childhood to
             cycling and PC gaming in my teenage years, I've always been drawn to
             activities that challenge me both physically and mentally.
             Currently, I find solace in reading web novels, delving into
             captivating stories from around the world.
-          </div>{" "}
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
           </div>
         </div>
       </div>

@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-text {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(183, 131, 231, 0.818),
-    rgb(209, 209, 209),
-    rgba(183, 131, 231, 0.818)
-  );
-  background-clip: text; /* Standard property */
-  -webkit-background-clip: text; /* WebKit vendor prefix */
-  -webkit-text-fill-color: transparent;
+@layer components {
+  .main {
+    @apply mt-4 sm:mt-8 container max-w-5xl px-6 sm:px-2 mx-auto;
+  }
+  .mediaLink {
+    @apply flex items-center justify-center border border-[#C778DD] p-1 hover:bg-[#C778DD] hover:bg-opacity-20 hover:text-white rounded w-fit sm:w-full;
+  }
+  .secondHeading {
+    @apply text-2xl text-start mt-8 mb-4;
+  }
 }
 
 @layer utilities {
@@ -20,6 +20,3 @@
   }
 }
 
-li::marker {
-  color: white  ;
-}
