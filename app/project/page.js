@@ -486,10 +486,6 @@ export default function Project() {
               />
             </div>
           </div>
-
-          <div className="absolute w-full h-full justify-center items-center -z-10 hidden md:flex">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
       </div>
     </div>
