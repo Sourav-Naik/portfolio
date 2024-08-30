@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import logo from "@/app/Images/logo.jpg";
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -90,14 +88,6 @@ export default function Contact() {
                   developer.sourav.naik@gmail.com
                 </span>
               </div>
-            </div>
-            <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 sm:hidden">
-              <Image
-                src={logo}
-                width={300}
-                alt="sourav"
-                className="opacity-25"
-              />
             </div>
           </div>
 
@@ -325,20 +315,8 @@ export default function Contact() {
                     !! mail me !!
                   </button>
                 </form>
-                <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10 sm:hidden">
-                  <Image
-                    src={logo}
-                    width={300}
-                    alt="sourav"
-                    className="opacity-25"
-                  />
-                </div>
               </div>
             </div>
-          </div>
-
-          <div className="absolute top-0 w-full h-full hidden justify-center items-center -z-10 sm:flex">
-            <Image src={logo} width={400} alt="sourav" className="opacity-25" />
           </div>
         </div>
       </div>

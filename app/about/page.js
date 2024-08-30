@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "@/app/Images/logo.jpg";
 import side from "@/app/Images/side.jpg";
 export default function About() {
   return (
@@ -32,14 +31,7 @@ export default function About() {
           </div>
 
           <div className="flex-1 flex md:justify-end items-stretch">
-            <Image
-              src={side}
-              alt="..."
-              className="object-fill"
-            />
-          </div>
-          <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
+            <Image src={side} alt="..." className="object-fill" />
           </div>
         </div>
 

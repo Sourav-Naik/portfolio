@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="sticky top-0 z-10 bg-[#282C33] container max-w-5xl px-1 sm:px-2 mx-auto"
+      className="sticky top-0 z-10 bg-[#282C33] container max-w-6xl px-1 sm:px-2 mx-auto"
       ref={menuRef}
     >
       <div className="flex h-fit items-end justify-between py-2">

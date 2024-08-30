@@ -38,9 +38,6 @@ export default function Home() {
           >
             Contact me !!
           </a>
-          <div className="absolute w-full h-full flex justify-center items-center -z-10 md:hidden">
-            <Image src={logo} width={300} alt="sourav" className="opacity-25" />
-          </div>
         </div>
         <div className="flex flex-col mt-8 md:mt-0 items-stretch">
           <Image
@@ -53,12 +50,12 @@ export default function Home() {
             <div className="text-[#ABB2BF] text-sm font-bold flex flex-wrap items-center leading-3 w-full py-2 px-3 border bottom-[1px] border-[#C778DD]">
               <div className="min-w-4 min-h-4 max-h-4 max-w-4 bg-[#C778DD] me-1"></div>
               Currently
-              <span className="text-white font-normal ms-1"> Unemployed</span>
+              <span className="text-white font-normal ms-1">
+                {" "}
+                Working at Zoftware
+              </span>
             </div>
           </div>
-        </div>
-        <div className="absolute w-full h-full justify-center items-center -z-10 hidden md:flex">
-          <Image src={logo} width={300} alt="sourav" className="opacity-25" />
         </div>
       </div>
 
@@ -117,14 +114,6 @@ export default function Home() {
               </div>
               <div className="px-3 py-1 text-gray-400 font-semibold">MERN</div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-center -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={300}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
           <div className="mt-8 md:mt-0 items-stretch order-1 flex-1">
             <Image
@@ -134,9 +123,6 @@ export default function Home() {
               className="contrast-125 md:min-w-[350px] md:w-full grayscale"
             />
           </div>
-        </div>
-        <div className="absolute w-full h-full hidden md:flex justify-center items-center -z-10">
-          <Image src={logo} width={300} alt="sourav" className="opacity-25" />
         </div>
       </div>
 
@@ -224,14 +210,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
 
           {/* second project */}
@@ -280,14 +258,6 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
             </div>
           </div>
 
@@ -359,14 +329,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -406,9 +368,6 @@ export default function Home() {
           <div className="flex-1 flex md:justify-end items-stretch">
             <Image src={side} alt="..." className="object-fill" />
           </div>
-        </div>
-        <div className="absolute w-full h-full hidden justify-center items-center -z-10 md:flex">
-          <Image src={logo} width={300} alt="sourav" className="opacity-25" />
         </div>
       </div>
 

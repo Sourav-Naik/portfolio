@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "@/app/Images/logo.jpg";
 import front from "@/app/Images/front.jpg";
 import shopon_preview from "../Images/shopon_preview.jpg";
 import spotify_preview from "@/app/Images/spotify-web-player.jpg";
@@ -42,9 +41,6 @@ export default function Project() {
 
         <div className="flex-1 flex md:justify-end items-stretch max-h-full">
           <Image src={front} alt="..." className="object-fill" />
-        </div>
-        <div className="absolute top-0 w-full h-full flex justify-center items-center -z-10">
-          <Image src={logo} width={300} alt="sourav" className="opacity-25" />
         </div>
       </div>
 
@@ -123,14 +119,6 @@ export default function Project() {
                 </div>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
 
           {/* Second project */}
@@ -201,14 +189,6 @@ export default function Project() {
                 </div>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
 
           {/* third project */}
@@ -257,16 +237,7 @@ export default function Project() {
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
-          </div>
+            </div>          </div>
 
           {/* fourth project */}
           <div className="flex flex-col border-2 border-[#C778DD] bg-opacity-20 bg-[#C778DD] w-full mx-auto relative overflow-x-hidden">
@@ -316,14 +287,6 @@ export default function Project() {
                 </div>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -364,14 +327,6 @@ export default function Project() {
                 </a>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
 
           {/* second small app */}
@@ -402,14 +357,6 @@ export default function Project() {
                   Source {`</>`}
                 </a>
               </div>
-            </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
             </div>
           </div>
 
@@ -442,14 +389,6 @@ export default function Project() {
                 </a>
               </div>
             </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
-            </div>
           </div>
 
           {/* fourth small app */}
@@ -476,14 +415,6 @@ export default function Project() {
                   Source {`</>`}
                 </a>
               </div>
-            </div>
-            <div className="absolute w-full h-full flex justify-center items-end -z-10 md:hidden">
-              <Image
-                src={logo}
-                width={200}
-                alt="sourav"
-                className="opacity-25"
-              />
             </div>
           </div>
         </div>
