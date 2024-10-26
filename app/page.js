@@ -73,7 +73,7 @@ export default function Home() {
                 Languages
               </div>
               <div className="px-3 py-1 text-gray-400 font-semibold text-wrap break-normal text-start ">
-                HTML CSS JavaScript
+                HTML, CSS, JavaScript
               </div>
             </div>
             <div className="border border-[#C778DD] ">
@@ -81,7 +81,7 @@ export default function Home() {
                 FramWorks
               </div>
               <div className="px-3 py-1 text-gray-400 font-semibold text-wrap break-normal text-start ">
-                React NEXT Angular Express.js
+                React, NEXT, Angular, Express.js, WXT(Web-Extension-Framework)
               </div>
             </div>
             <div className="border border-[#C778DD] ">
@@ -89,7 +89,7 @@ export default function Home() {
                 Tools
               </div>
               <div className="px-3 py-1 text-gray-400 font-semibold text-wrap break-normal text-start ">
-                VsCode Git Figma Whimsical
+                VsCode, Git, Figma, Whimsical
               </div>
             </div>
             <div className="border border-[#C778DD] ">
@@ -97,7 +97,7 @@ export default function Home() {
                 CSS Tools
               </div>
               <div className="px-3 py-1 text-gray-400 font-semibold text-wrap break-normal text-start ">
-                TailWind BootStarp Mateial Ui Bulma
+                TailWind, BootStarp, Mateial-Ui, Bulma
               </div>
             </div>
             <div className="border border-[#C778DD] ">
@@ -112,7 +112,9 @@ export default function Home() {
               <div className="text-xl border-b px-3 py-1 border-[#C778DD]">
                 Additional
               </div>
-              <div className="px-3 py-1 text-gray-400 font-semibold">MERN</div>
+              <div className="px-3 py-1 text-gray-400 font-semibold">
+                MERN, O-Auth, I18next, Vercel
+              </div>
             </div>
           </div>
           <div className="mt-8 md:mt-0 items-stretch order-1 flex-1">
